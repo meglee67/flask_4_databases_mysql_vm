@@ -16,7 +16,7 @@
 * For inbound port rules, choose to allow selected ports and check off **SSH, HTTP, and HTTPS**
 * On the next tab for Networking, scroll down and click to enable the option of **Delete NIC when VM is deleted**
 * On the next tab for Management,s croll down and click to enable **Auto-shutdown**. This is so you don't need to remember to come back and shut off your VM, costing you money. With this, change the timezone to EST and set it to whatever time you'd like.
-* Then move on to review and create.
+* Then click on the review and create button in the bottom left.
 
 ### Google Cloud Platform Virtual Machine Setup
 * Login on the [Cloud Console](https://console.cloud.google.com/) and click on the button new project. Name it something relevant to the task at hand.
