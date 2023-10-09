@@ -37,6 +37,20 @@
 * For the firewall, click the options to **Allow HTTP and HTTPS traffic**
 * Then hit create and wait for your VM instance to be created.
 
+## Installing MySQL on the Azure VM
+* First you will need to connect to your virtual machine via a terminal. To do this, we will use the [google cloud shell terminal](https://shell.cloud.google.com/?show=ide%2Cterminal&authuser=1&fromcloudshell=true&pli=1)
+* Within the terminal, enter the command ``` ssh MELE@20.55.27.32 ```
+  * This is how you connect to the VM. It's ssh, a space, then the username you set when creating the VM in Azure, a @ and then the public IP address found in Azure
+![image](https://github.com/meglee67/flask_4_databases_mysql_vm/assets/123908362/e34538ca-d8c0-473f-8f00-6e1c124abcd8)
+
+* Once you enter in the command, you will get a warning message. Do not fear, this message is just saying that your PC doesn't recognize the PC you're trying to connect to. Type in yes to continue connecting.
+![image](https://github.com/meglee67/flask_4_databases_mysql_vm/assets/123908362/d6a7f151-1342-4c7a-b857-a85024f6d05e)
+
+* Once you have typed in yes, you then need to re-enter the ssh command, and then enter the password you set when creating the Azure VM. For security, the password will not appear as you are typing it, so if an error occurs, retry this step, as you may have entered the password incorrectly.
+* Now you are in the diffeent PC bc you can see the name turned into the name of your machine you made in Azure (here it is MELE@meganMYSQL)
+![image](https://github.com/meglee67/flask_4_databases_mysql_vm/assets/123908362/7abe0ae5-bf91-4f9f-8e32-ebc59767b29a)
+
+* Now before installing MySQL, you have to update your OS. To do this run the command ``` sudo apt-get update ```
 ## Integrate with Flask
 
 <br>
