@@ -13,7 +13,7 @@
 ![image](https://github.com/meglee67/mysql_cloudmanaged_databases/assets/123908362/cad03e37-6540-4a02-b80e-27ef4b204a35)
 * Once you have created a new project, make sure you are clicked into the right project. Go to the dashboard and check.
 * Then click on the navigation menu in the top left and find the tab that is called "Compute Engine" and then on the pop-out menu, hit "Vm Instances"
-![image](https://github.com/meglee67/flask_4_databases_mysql_vm/assets/123908362/a07af2ca-f152-47c8-8f21-56c3cd105798)
+* ![image](https://github.com/meglee67/flask_4_databases_mysql_vm/assets/123908362/a07af2ca-f152-47c8-8f21-56c3cd105798)
 * 
 
 ## Integrate with Flask
