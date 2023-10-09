@@ -7,6 +7,14 @@
 ### Azure Virtual Machine Setup
 
 ### Google Cloud Platform Virtual Machine Setup
+* Login on the [Cloud Console](https://console.cloud.google.com/) and click on the button new project. Name it something relevant to the task at hand.
+![image](https://github.com/meglee67/mysql_cloudmanaged_databases/assets/123908362/f9dcf680-5ad7-4ceb-9b2a-834f7c871f6f)
+* Then when on the page to create a new project, make sure to designate the location of the new project as AHI - GCP.
+![image](https://github.com/meglee67/mysql_cloudmanaged_databases/assets/123908362/cad03e37-6540-4a02-b80e-27ef4b204a35)
+* Once you have created a new project, make sure you are clicked into the right project. Go to the dashboard and check.
+* Then click on the navigation menu in the top left and find the tab that is called "Compute Engine" and then on the pop-out menu, hit "Vm Instances"
+![image](https://github.com/meglee67/flask_4_databases_mysql_vm/assets/123908362/a07af2ca-f152-47c8-8f21-56c3cd105798)
+* 
 
 ## Integrate with Flask
 
