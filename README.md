@@ -5,6 +5,8 @@
 
 ## MySQL Setup on Azure/GCP VM
 ### Azure Virtual Machine Setup
+* Login on the [Azure Portal](https://azure.microsoft.com/en-us/get-started/azure-portal) and search in the bar for Virtual Machines. Click on it and then click create in the top left.
+* 
 
 ### Google Cloud Platform Virtual Machine Setup
 * Login on the [Cloud Console](https://console.cloud.google.com/) and click on the button new project. Name it something relevant to the task at hand.
@@ -18,7 +20,12 @@
 * Then click on create instance
 
 ![image](https://github.com/meglee67/flask_4_databases_mysql_vm/assets/123908362/94ebdff4-2203-4cb0-9112-55d43d0483dc)
-*
+* Give your instance a name and make sure the region and zone selected are **us-central1 (Iowa)** and **us-central1-a**
+* For machine configuration, choose **E2**, and for machine type choose the preset **e2-small (2 vCPU, 1 core, 2GB memory**.
+* The VM provisioning model should be standard, but if an error message displays that only the Spot model can be used, its okay to switch to that. It just means that the spot VM will only run for a certain amount of time before stopping, where in a standard VM it will continue to run unless you stop it. Spot VMs may be terminated at any time.
+* Under Identity and API access, use the **Compute Engine default service account**
+* For the firewall, click the options to **Allow HTTP and HTTPS traffic**
+* Then hit create and wait for your VM instance to be created.
 
 ## Integrate with Flask
 
