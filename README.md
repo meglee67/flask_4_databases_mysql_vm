@@ -16,6 +16,7 @@
 
 ![image](https://github.com/meglee67/flask_4_databases_mysql_vm/assets/123908362/a07af2ca-f152-47c8-8f21-56c3cd105798)
 * Then click on create instance
+
 ![image](https://github.com/meglee67/flask_4_databases_mysql_vm/assets/123908362/94ebdff4-2203-4cb0-9112-55d43d0483dc)
 *
 
