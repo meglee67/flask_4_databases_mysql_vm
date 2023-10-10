@@ -120,7 +120,33 @@
 ![image](https://github.com/meglee67/flask_4_databases_mysql_vm/assets/123908362/a4e44024-57b7-4aa5-b620-78c3e435a116)
 
 * Now you have successfully connected to MySQL Workbench
-  
+
+## Creating the simple database
+* I re-used my SQL from HW 4A. My new database is called **employment**, and I created two tables called **employees** and **contact_info**.
+* The employees table contains an employee ID and a social security number (SSN)
+* The contact_info table contains a contact_id, employee_id, first name, last name, date_of_birth, address, phone number and email. This table uses the contact ID as a primary key, and the employee ID as a foreign key, referincing the employee ID found in the employees table.
+* To populate these tables I used the command ``` INSERT INTO example field VALUES ```
+```
+INSERT INTO employees (SSN) VALUES
+    ('123456789'),
+    ('987654321'),
+    ('111223344');
+
+INSERT INTO contact_info(
+    employee_id,
+    first_name,  
+    last_name,
+    date_of_birth,
+    address,
+    phone_number,
+    email)
+VALUES
+(1, 'Astarion', 'Ancunin', '1990-05-15', '123 Main St, New York', '555-1234', 'john.doe@example.com'),
+(2, 'Gale', 'Dekarios', '1985-08-22', '456 Oak Ave, Los Angeles', '555-5678', 'jane.smith@example.com'),
+(3, 'Wyll', 'Ravengard', '1995-02-10', '789 Elm St, Chicago', '555-9876', 'robert.j@example.com');
+```
+
+* 
 ## Integrate with Flask
 
 <br>
