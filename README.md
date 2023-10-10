@@ -145,8 +145,24 @@ VALUES
 (2, 'Gale', 'Dekarios', '1985-08-22', '456 Oak Ave, Los Angeles', '555-5678', 'jane.smith@example.com'),
 (3, 'Wyll', 'Ravengard', '1995-02-10', '789 Elm St, Chicago', '555-9876', 'robert.j@example.com');
 ```
+![image](https://github.com/meglee67/flask_4_databases_mysql_vm/assets/123908362/8f2a234b-5b73-4948-97d2-8d7eddc7c50c)
 
-* 
+* Then I looked and realized I had changed my example names, but not the corresponding emails, so I used the commands below to update the database
+```
+UPDATE contact_info
+SET email = 'astarion.ancunin@example.com'
+WHERE employee_id = 1;
+
+UPDATE contact_info
+SET email = 'gale.dekarios@example.com'
+WHERE employee_id = 2;
+
+UPDATE contact_info
+SET email = 'wyll.ravengard@example.com'
+WHERE employee_id = 3;
+```
+![image](https://github.com/meglee67/flask_4_databases_mysql_vm/assets/123908362/5d05e3f3-deb9-4f8b-8844-1f9b713dfd9f)
+
 ## Integrate with Flask
 
 <br>
