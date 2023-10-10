@@ -148,6 +148,7 @@ VALUES
 ![image](https://github.com/meglee67/flask_4_databases_mysql_vm/assets/123908362/8f2a234b-5b73-4948-97d2-8d7eddc7c50c)
 
 * Then to check if I successfully pushed data into the tables I used the commands ``` SELECT * FROM employees; ``` and ``` SELECT * FROM contact_info; ``` to view the tables.
+
 ![image](https://github.com/meglee67/flask_4_databases_mysql_vm/assets/123908362/67ec73d6-730c-4646-bfd1-d97273de6a41)
 ![image](https://github.com/meglee67/flask_4_databases_mysql_vm/assets/123908362/0dfa799e-ced7-4488-9321-31a3aa621481)
 
