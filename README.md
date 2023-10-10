@@ -1,6 +1,6 @@
 # flask_4_databases_mysql_vm
 * HHA 504 HW 4B
-* Due 10/1
+* Due 10/11
 * OG Instructions below
 
 ## MySQL Setup on Azure/GCP VM
