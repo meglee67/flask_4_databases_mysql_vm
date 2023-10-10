@@ -176,7 +176,7 @@ WHERE employee_id = 3;
 * I then ran ```python app.py``` to view my site. It didn't load properly and I figured out that it was because I had named my Templates folder with an uppercase T, so I changed it to templates with a lowercase and then the homepage was able to load.
 * Then my next problem was that The employees table displayed properly, with the two fields being **Employee_ID** and **SSN**, but the Contact Info table wasn't displaying the info properly.
 ![image](https://github.com/meglee67/flask_4_databases_mysql_vm/assets/123908362/b6d94255-d37c-43be-b7b1-da27fa1e2734)
-
+*Looking into it, the problem was on line 40 of data.html. The issue was I copied and pasted the first original block of text and then edited it to fit the conditions of my contact_info table, but it was still referering to "for data in data.values". I changed it to "for data in data2.values"
 
 <br>
 
