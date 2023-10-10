@@ -22,22 +22,3 @@ conn_string = (
 
 # Create a database engine
 db_engine = create_engine(conn_string, echo=False)
-
-
-def get_tables(engine):
-    """Get list of tables."""
-    inspector = inspect(engine)
-    return inspector.get_table_names()
-
-def execute_query_to_dataframe(query: str, engine):
-    """Execute SQL query and return result as a DataFrame."""
-    return read_sql(query, engine)
-
-
-# Example usage
-tables = get_tables(db_engine)
-print("Tables in the database:", tables)
-
-sql_query = "SELECT * FROM your_table_name"  # Modify as per your table
-df = execute_query_to_dataframe(sql_query, db_engine)
-print(df)
