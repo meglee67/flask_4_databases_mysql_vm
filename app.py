@@ -40,7 +40,7 @@ def execute_query_to_dataframe(query: str, engine):
 tables = get_tables(db_engine)
 print("Tables in the database:", tables)
 
-sql_query = "SELECT * employees"  # Modify as per your table
+sql_query = "SELECT * FROM employees"  # Modify as per your table
 df = execute_query_to_dataframe(sql_query, db_engine)
 
 sql_query2 = "SELECT * FROM contact_info"  # Modify as per your table
