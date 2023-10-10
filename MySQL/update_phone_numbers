@@ -1,0 +1,11 @@
+UPDATE contact_info
+SET phone_number = '734-565-1234'
+WHERE employee_id = 1;
+
+UPDATE contact_info
+SET phone_number = '621-150-5678'
+WHERE employee_id = 2;
+
+UPDATE contact_info
+SET phone_number = '716-525-9876'
+WHERE employee_id = 3; 
