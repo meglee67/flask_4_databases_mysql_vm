@@ -128,9 +128,9 @@
 * To populate these tables I used the command ``` INSERT INTO example field VALUES ```
 ```
 INSERT INTO employees (SSN) VALUES
-    ('123456789'),
-    ('987654321'),
-    ('111223344');
+('123456789'),
+('987654321'),
+('111223344');
 
 INSERT INTO contact_info(
     employee_id,
