@@ -174,9 +174,16 @@ WHERE employee_id = 3;
 * Then instead of using the provide commands of ```df = execute_query_to_dataframe(sql_query, db_engine)``` and ```print(df)```, I went back to a [previous assignment](https://github.com/meglee67/azure_flask_deployment/blob/main/app.py) and took the Flask setup, and proceeded to add it in place of the whole df, print df.
 * I also took the HTML files from the same assignment, copied them over and modified them for my use. I got rid of the about page, changed some of the HTML text display for the site, and replaced references to **base.html** to now refer to **index.html** as that was what I had named it in this assignment
 * I then ran ```python app.py``` to view my site. It didn't load properly and I figured out that it was because I had named my Templates folder with an uppercase T, so I changed it to templates with a lowercase and then the homepage was able to load.
+![image](https://github.com/meglee67/flask_4_databases_mysql_vm/assets/123908362/0325410e-9f04-4211-a0fb-7a77fe5e3a1b)
+
 * Then my next problem was that The employees table displayed properly, with the two fields being **Employee_ID** and **SSN**, but the Contact Info table wasn't displaying the info properly.
 ![image](https://github.com/meglee67/flask_4_databases_mysql_vm/assets/123908362/b6d94255-d37c-43be-b7b1-da27fa1e2734)
-*Looking into it, the problem was on line 40 of data.html. The issue was I copied and pasted the first original block of text and then edited it to fit the conditions of my contact_info table, but it was still referering to "for data in data.values". I changed it to "for data in data2.values"
+* Looking into it, the problem was on line 40 of data.html. The issue was I copied and pasted the first original block of text and then edited it to fit the conditions of my contact_info table, but it was still referering to "for data in data.values". I changed it to "for data in data2.values"
+![image](https://github.com/meglee67/flask_4_databases_mysql_vm/assets/123908362/0f68d5a6-f7b0-4b0b-942c-94bcadc142bd)
+
+* This fixed my issue and populated the Contact Info table, but then looking at it, I realized that my phone numbers were missing 3 numbers to make it an actual phone number, so I decided to go back into MySQl Workbench to fix the phone numbers and then reload my flask app. 
+* Going back into MySQl Workbench and pushing the changes worked, and rerunning ```python app.py``` showed me the correct working page.
+![image](https://github.com/meglee67/flask_4_databases_mysql_vm/assets/123908362/8a20e44f-388b-4b48-b787-14c548c13375)
 
 <br>
 
